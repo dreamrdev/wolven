@@ -902,6 +902,17 @@ input[type="submit"]:focus{
 	outline: 0 !important;
 	box-shadow: none !important;
 }
+input[type="text"]:active,
+input[type="text"]:focus,
+input[type="email"]:active,
+input[type="email"]:focus,
+input[type="url"]:active,
+input[type="url"]:focus,
+textarea:active,
+textarea:focus{
+	box-shadow: none !important;
+	outline: none !important;
+}
 #secondary{
 	margin-top: 20px;
 }
@@ -1062,9 +1073,12 @@ input[type="submit"]:focus{
 #comments{
 	padding: 40px 0;
 }
-#commentform input{
-	width: 300px !important;
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input[type="url"]{
+	width: 100% !important;
 }
+
 .comment-meta{
 	background-color: #ffffff;
 	color: #000000;
