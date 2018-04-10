@@ -115,7 +115,7 @@
 			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'wolven' ), 'Wolven', '<a href="http://underscores.me/">Dreamr Development</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'wolven' ), 'Wolven', '<a href="https://dreamrdev.com">Dreamr Development</a>' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
