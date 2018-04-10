@@ -2,6 +2,7 @@
 Theme Name: Wolven
 Author: Dreamr Development
 Author URI: https://dreamrdev.com
+Theme URI: https://dreamrdev.com/dreamr2/wolvendemo/
 Description: Creative one page WordPress theme for web developers, web designers, and artists alike to showcase their work.
 Version: 2.0.0
 Text Domain: wolven
@@ -925,6 +926,15 @@ input[type="submit"]:focus{
 .navbar .collapse li{
 	  display: inline;
 }
+.navbar .navbar-nav ul{
+	list-style: none;
+	margin-left: -30px;
+}
+.navbar .navbar-toggler{
+	 color: #FFFFFF;
+	 border-color: #FFFFFF;
+ }
+
 
 /* Header */
 #masthead{
@@ -952,6 +962,7 @@ input[type="submit"]:focus{
 	padding: 10px 40px;
 	border: 2px #fff solid;
 	border-radius: 5px;
+	margin-bottom: 40px;
 }
 
 /* Posts Page */
@@ -1050,6 +1061,9 @@ input[type="submit"]:focus{
 /* Comments */
 #comments{
 	padding: 40px 0;
+}
+#commentform input{
+	width: 300px !important;
 }
 .comment-meta{
 	background-color: #ffffff;

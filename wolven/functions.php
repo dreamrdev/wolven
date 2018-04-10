@@ -37,6 +37,11 @@ function save_customize_options(){
 
         <?php endif; ?>
 
+        .navbar .navbar-toggler{
+            color: <?php echo get_theme_mod('toggler-color') ?> !important;
+            border-color:<?php echo get_theme_mod('toggler-color') ?> !important;
+        }
+
         .navbar a{
             color: <?php echo get_theme_mod('header-link-color') ?> !important;
         }

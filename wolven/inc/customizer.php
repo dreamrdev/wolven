@@ -46,6 +46,16 @@ function wolven_customize_register( $wp_customize ) {
 				'section' => 'header',
 				'settings' => 'header-link-color',
 			)));
+			//toggler button color
+			$wp_customize->add_setting('toggler-color', array(
+				'default' => '',
+				'transport' => 'refresh',
+			));
+			$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'toggler-color-select', array(
+				'label' => __('Toggler Button Color', 'wolven'),
+				'section' => 'header',
+				'settings' => 'toggler-color',
+			)));
 			//header link hover color
 			$wp_customize->add_setting('header-link-hover-color', array(
 				'default' => '#a30000',

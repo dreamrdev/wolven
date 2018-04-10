@@ -18,6 +18,8 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link href="<?php bloginfo('template_directory'); ?>/assets/fonts/fontawesome-all.min.css" rel="stylesheet">
 
 
     <!-- Google Fonts -->
@@ -33,7 +35,7 @@
         <nav class="navbar navbar-expand-md">
             <span class="navbar-brand site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".collapse" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-angle-double-down"></i>
             </button>
             <div class="collapse navbar-collapse">
 	            <?php
@@ -79,7 +81,7 @@
         <nav class="navbar navbar-expand-md">
             <span class="navbar-brand site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".collapse" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse">
 				<?php
