@@ -77,7 +77,7 @@
         </div>
 	</header>
 	<?php else : ?>
-    <header id="masthead" class="site-header" style="max-height: 80px;">
+    <header id="masthead" class="site-header" style="height: auto !important;">
         <nav class="navbar navbar-expand-md">
             <span class="navbar-brand site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".collapse" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
