@@ -37,16 +37,20 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".collapse" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-angle-double-down"></i>
             </button>
-            <div class="collapse navbar-collapse">
+
 	            <?php
-	            wp_nav_menu(array(
-		            'theme_location' => 'primary',
-		            'container' => 'nav',
+	            wp_nav_menu( array(
+		            'theme_location'  => 'primary',
+		            'depth'	          => 2, // 1 = no dropdowns, 2 = with dropdowns.
+		            'container'       => 'nav',
 		            'container_class' => 'collapse navbar-collapse',
-		            'menu_class' => 'nav navbar-nav'
-	            ));
+		            'container_id'    => 'bs-example-navbar-collapse-1',
+		            'menu_class'      => 'navbar-nav',
+		            'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+		            'walker'          => new WP_Bootstrap_Navwalker(),
+	            ) );
 	            ?>
-            </div>
+
         </nav>
         <div class="container" id="sitelogo-container">
             <div class="row">
@@ -84,14 +88,18 @@
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse">
-				<?php
-				wp_nav_menu(array(
-					'theme_location' => 'primary',
-					'container' => 'nav',
-					'container_class' => 'collapse navbar-collapse',
-					'menu_class' => 'nav navbar-nav'
-				));
-				?>
+	            <?php
+	            wp_nav_menu( array(
+		            'theme_location'  => 'primary',
+		            'depth'	          => 2, // 1 = no dropdowns, 2 = with dropdowns.
+		            'container'       => 'nav',
+		            'container_class' => 'collapse navbar-collapse',
+		            'container_id'    => 'bs-example-navbar-collapse-1',
+		            'menu_class'      => 'navbar-nav',
+		            'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+		            'walker'          => new WP_Bootstrap_Navwalker(),
+	            ) );
+	            ?>
             </div>
         </nav>
     </header>

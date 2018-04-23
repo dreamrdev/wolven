@@ -936,7 +936,17 @@ textarea:focus{
 	margin-top: 20px;
 }
 .navbar .collapse li{
-	  display: inline;
+	  display: inline-block;
+}
+.navbar .collapse.show li{
+	display: block;
+}
+.navbar .dropdown-menu.show{
+	background-color: transparent;
+	margin-left: -15px;
+}
+.navbar .dropdown-menu.show .menu-item a:hover{
+	background-color: transparent;
 }
 .navbar .navbar-nav ul{
 	list-style: none;

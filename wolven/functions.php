@@ -120,7 +120,7 @@ if ( ! function_exists( 'wolven_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'wolven' ),
+			'primary' => esc_html__( 'Primary', 'wolven' ),
 		) );
 
 		/*
@@ -307,3 +307,6 @@ function new_excerpt_more($more) {
 	return ' <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">Read More</a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+// Register Custom Navigation Walker
+require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
