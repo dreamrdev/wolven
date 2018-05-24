@@ -35,7 +35,7 @@
         <nav class="navbar navbar-expand-md">
             <span class="navbar-brand site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".collapse" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-bars"></i>
             </button>
 
 	            <?php

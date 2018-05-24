@@ -230,6 +230,17 @@ function wolven_customize_register( $wp_customize ) {
 				'section' => 'footer',
 				'settings' => 'footer-widget-area-link-hover-color',
 			)));
+			//Copyright text
+			$wp_customize->add_setting('footer-copyright-text', array(
+				'default' => '&copy; 2018',
+				'transport' => 'refresh',
+			));
+			$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'footer-copyright-text-select', array(
+				'type' => 'textarea',
+				'label' => __('Copyright Text', 'wolven'),
+				'section' => 'footer',
+				'settings' => 'footer-copyright-text',
+			)));
 }
 add_action( 'customize_register', 'wolven_customize_register' );
 
